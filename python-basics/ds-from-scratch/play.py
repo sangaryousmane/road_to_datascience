@@ -53,7 +53,7 @@ def nationalities(l1, l2):
 lst1 = ["Ousmane", "Puyol", "Thomas", "Zeynab"]
 lst2 = ["Liberia", "DR Congo", "Gabon", "Morocco"]
 
-(lst1, lst2)
+nationalities(lst1, lst2)
 # lst = [2, 4, 5]
 # dicts = {"age": 23, "name": "Ousmane"}
 #
