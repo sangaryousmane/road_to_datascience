@@ -41,10 +41,23 @@ def args_pack(*args):
 def kwargs_unpack(**kwargs):
     print(kwargs);
 
-lst = [2, 4, 5]
-dicts = {"age": 23, "name": "Ousmane"}
+def zipping_list(lst1:list, lst2:list):
+    for i1, i2 in zip(lst1, lst2):
+        print(f'{i1, i2}')
 
-kwargs_unpack(country="Liberia", hobby="Coding", **dicts);
+def nationalities(l1, l2):
+
+    for name, country in zip(l1, l2):
+        print(f'{name} is from {country}')
+
+lst1 = ["Ousmane", "Puyol", "Thomas", "Zeynab"]
+lst2 = ["Liberia", "DR Congo", "Gabon", "Morocco"]
+
+(lst1, lst2)
+# lst = [2, 4, 5]
+# dicts = {"age": 23, "name": "Ousmane"}
+#
+# kwargs_unpack(country="Liberia", hobby="Coding", **dicts);
 # args_pack(*lst);
 # args_kwargs(4, 5, 9, 10, 11, option=True, option1=3, option2=5);
 # arg_printer(4, 5, True, param=1, param1=2, param2=3, param3=4);
