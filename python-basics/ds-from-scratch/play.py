@@ -44,7 +44,7 @@ def kwargs_unpack(**kwargs):
 lst = [2, 4, 5]
 dicts = {"age": 23, "name": "Ousmane"}
 
-kwargs_unpack(**dicts);
+kwargs_unpack(country="Liberia", **dicts);
 # args_pack(*lst);
 # args_kwargs(4, 5, 9, 10, 11, option=True, option1=3, option2=5);
 # arg_printer(4, 5, True, param=1, param1=2, param2=3, param3=4);
