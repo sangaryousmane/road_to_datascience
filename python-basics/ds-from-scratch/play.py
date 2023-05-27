@@ -30,7 +30,7 @@ def arg_printer(a, b, option, **kwargs):
 
 
 def args_kwargs(a, b, *args, option=True, **kwargs):
-    print(f' a = {a}, b = {b}, args = {args}, optin = {option}')
+    print(f' a = {a}, b = {b}, args = {args}, option = {option}')
     print(f'kwargs = {kwargs}')
 
 
@@ -38,6 +38,7 @@ def args_kwargs(a, b, *args, option=True, **kwargs):
 def args_pack(*args):
     print(args);
 
+# Accessing all positional arguments
 def kwargs_unpack(**kwargs):
     print(kwargs);
 
