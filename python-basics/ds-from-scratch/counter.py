@@ -9,7 +9,6 @@ def in_string(l: str) -> list:
 
 l = [3, 4, 2, 4, 1, 4, 2, 3]
 l1 = "Hello brother";
-c = Counter(l1);
+c = Counter(l);
 print(c.most_common(2));
 
-print(in_string(l1))
