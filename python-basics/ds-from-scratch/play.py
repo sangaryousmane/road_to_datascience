@@ -104,9 +104,10 @@ def line_trend():
     plt.figure(figsize=(17, 7))
     plt.show()
 
+
 def bar_trend():
     plt.style.use('fivethirtyeight')
-    plt.bar(x_indexes + width, py_dev_y,  width=width, label='Python devs')
+    plt.bar(x_indexes + width, py_dev_y, width=width, label='Python devs')
     plt.bar(x_indexes - width, dev_y, width=width, label='All Dev')
 
     plt.xlabel("Salary $")
@@ -114,4 +115,23 @@ def bar_trend():
     plt.legend(loc=9)
     plt.show()
 
-bar_trend()
+
+def palindrome(word):
+    return word == word[::-1];
+
+
+def sumOfNumbers(n):
+    i: int = 0;
+    if n < 0:
+        n *= -1;
+
+    if n == 0:
+        return 1;
+
+    while n != 0:
+        i +=1;
+        n //= 10;
+    return i;
+
+
+print(f'{sumOfNumbers(3353320)}');
