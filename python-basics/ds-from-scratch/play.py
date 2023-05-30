@@ -134,4 +134,4 @@ def sumOfNumbers(n):
     return i;
 
 
-print(f'{sumOfNumbers(3353320)}');
+print(f'{sumOfNumbers(-3353320)}');
